@@ -1,3 +1,9 @@
 body {
     text-align: center;
 }
+
+.countdown {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
