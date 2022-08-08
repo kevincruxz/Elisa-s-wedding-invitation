@@ -17,3 +17,24 @@ function displayCountdown(days, hours, minutes, seconds) {
     document.getElementById('minutes').innerHTML = minutes + " Minutos :";
     document.getElementById('seconds').innerHTML = seconds + " Segundos";
 }
+
+/*
+    // detect when element gets visible on scroll
+    document.addEventListener("scroll", (e) => {
+        var element = document.getElementById("img-lisa");
+
+        var top_of_element = element.offsetTop;
+        var bottom_of_element = element.offsetTop + element.offsetHeight + element.style.marginTop;
+        var bottom_of_screen = window.scrollY + window.innerHeight;
+        var top_of_screen = window.scrollY;
+
+        if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)) {
+            // Element is visible write your codes here
+            // You can add animation or other codes here
+            element.classList.add('img-on-screen');
+        } else {
+            // the element is not visible, do something else
+            element.classList.remove('img-on-screen');
+        }
+    });
+*/
