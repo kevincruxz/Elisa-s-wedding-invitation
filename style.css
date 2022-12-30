@@ -1,11 +1,13 @@
-html {
-    margin: 0px;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-body {
+html, body {
+    height: 100%;
     text-align: center;
-    margin: 0px;
-    margin-top: -23px;
+    overflow-x: hidden;
+    overflow-y: visible;
 }
 
 .countdown {
@@ -21,14 +23,26 @@ body {
 }
 
 .portada {
-    background-image: url(img/foto1.jpg);
-    padding: 50px;
-    background-size: 100% 100%;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    background: url(img/foto2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.portada img {
-    width: 100%;
-    height: auto;
+#esquina-izq-1, #esquina-der-1 {
+    width: 30px;
+    height: 10px;
+    background-color: black;
+    margin: 5px;
+}
+
+#esquina-izq-2, #esquina-der-2 {
+    width: 10px;
+    height: 30px;
+    background-color: black;
+    margin: 5px;
 }
