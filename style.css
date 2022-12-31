@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +16,7 @@ html, body {
     display: flex;
     gap: 5px;
     justify-content: center;
+    height: 2rem;
 }
 
 .presentaciones img {
@@ -31,18 +34,63 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Sevillana', cursive;
+    font-size: 2rem;
 }
 
-#esquina-izq-1, #esquina-der-1 {
-    width: 30px;
-    height: 10px;
-    background-color: black;
-    margin: 5px;
+#letraE, #letraL, #letraI, #letraS, #letraA, #letraAND, #letraP, #letrae, #letraD, #letraR, #letraO {
+    animation: entradaGeneral 2s;
+    display: inline-block;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
-#esquina-izq-2, #esquina-der-2 {
-    width: 10px;
-    height: 30px;
-    background-color: black;
-    margin: 5px;
+#letraL {
+    animation-delay: 400ms;
+    animation-duration: 2s;
+}
+
+#letraI {
+    animation-delay: 200ms;
+}
+
+#letraS {
+    animation-delay: 300ms;
+}
+
+#letraAND {
+    animation-delay: 1.5s;
+    animation-duration: 2s;
+}
+
+#letraP {
+    animation-delay: 500ms;
+}
+
+#letrae {
+    animation-delay: 100ms;
+}
+
+#letraD {
+    animation-delay: 470ms;
+}
+
+#letraR {
+    animation-delay: 150ms;
+}
+
+#letraO {
+    animation-delay: 350ms;
+}
+
+@keyframes entradaGeneral {
+    0% {
+        transform: scale(2);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
