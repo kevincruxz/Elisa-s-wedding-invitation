@@ -8,6 +8,8 @@
 html, body {
     height: 100%;
     text-align: center;
+    overflow-x: hidden;
+    overflow-y: visible;
 }
 
 .countdown {
@@ -15,12 +17,6 @@ html, body {
     gap: 5px;
     justify-content: center;
     height: 2rem;
-}
-
-.presentaciones img {
-    width: 150px;
-    
-    border-radius: 50px;
 }
 
 .portada {
@@ -91,4 +87,46 @@ html, body {
         transform: scale(1);
         opacity: 1;
     }
+}
+
+.parrafos {
+    width: 11rem;
+    height: 7%;
+    margin-bottom: 40px;
+    z-index: 1;
+    position: relative;
+}
+
+.parrafo-uno, .parrafo-tres, .parrafo-cinco {
+    text-align: left;
+    margin-left: 25px;
+}
+
+.parrafo-dos, .parrafo-cuatro {
+    text-align: right;
+    margin-left: 150px;
+}
+
+.fotos-seccion2 {
+    width: 70vw;
+    position: absolute;
+    top: -100px;
+    z-index: 2;
+}
+
+.parrafo-uno {
+    position: absolute;
+    z-index: 3;
+}
+
+.foto1-seccion2 {
+    left: 50px;
+    top: 50px;
+}
+
+.parte1 {
+    position: relative;
+    z-index: 1;
+    height: 270px;
+    width: 300px;
 }
