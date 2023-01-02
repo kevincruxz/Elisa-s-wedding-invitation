@@ -8,8 +8,6 @@
 html, body {
     height: 100%;
     text-align: center;
-    overflow-x: hidden;
-    overflow-y: visible;
 }
 
 .countdown {
@@ -21,7 +19,7 @@ html, body {
 
 .presentaciones img {
     width: 150px;
-    position: relative;
+    
     border-radius: 50px;
 }
 
