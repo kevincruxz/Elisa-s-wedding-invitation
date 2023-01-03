@@ -12,11 +12,30 @@ let setCountdown = setInterval(function() {
 }, 1000);
 
 function displayCountdown(days, hours, minutes, seconds) {
-    document.getElementById('days').innerHTML = days + " Dias :";
-    document.getElementById('hours').innerHTML = hours + " Horas :";
-    document.getElementById('minutes').innerHTML = minutes + " Minutos :";
+    document.getElementById('days').innerHTML = days + " Dias ";
+    document.getElementById('hours').innerHTML = hours + " Horas ";
+    document.getElementById('minutes').innerHTML = minutes + " Minutos ";
     document.getElementById('seconds').innerHTML = seconds + " Segundos";
 }
+
+const holaArray = [
+    document.getElementById('H'),
+    document.getElementById('o'),
+    document.getElementById('l'),
+    document.getElementById('a')
+];
+
+let i = 0;
+
+let holaAnimation = setInterval(function() {
+    if (i === 0) {
+        holaArray[3].classList.remove('agrandizar');
+    } else {
+        holaArray[i - 1].classList.remove('agrandizar');
+    }
+    holaArray[i].classList.add('agrandizar');
+    i = (i === 3) ? 0 : i + 1;
+}, 300);
 
 /*
     // detect when element gets visible on scroll
