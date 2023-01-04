@@ -37,6 +37,16 @@ let holaAnimation = setInterval(function() {
     i = (i === 3) ? 0 : i + 1;
 }, 300);
 
+let bot1 = document.getElementById('cuando');
+
+bot1.addEventListener('click', (e) => {
+    let descripcion = document.getElementById('descripcion');
+    descripcion.classList.add('agrandar-descripcion');
+
+    descripcion.innerHTML = "asdad asd asdsad adasd asdasdasdad asdasdasd";
+    bot1.style.cssText = 'margin-left: -10.5rem;';
+});
+
 /*
     // detect when element gets visible on scroll
     document.addEventListener("scroll", (e) => {

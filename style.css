@@ -179,3 +179,48 @@ html, body {
 .agrandizar {
     font-size: 5rem;
 }
+
+.schedule {
+    background: url(img/lineadetiempo.png);
+    height: 125rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.schedule h3 {
+    padding-top: 8rem;
+}
+
+#dato-uno {
+    padding: 5.1rem 0 0 0.1rem;
+    position: relative;
+}
+
+#dato-dos, #dato-cuatro, #dato-seis, #dato-ocho {
+    padding-top: 12.5rem;
+    padding-right: 9.7rem;
+} 
+
+#dato-tres, #dato-cinco, #dato-siete {
+    padding-top: 12rem;
+    padding-left: 8rem;
+} 
+
+#dato-tres {
+    padding-top: 11rem;
+}
+
+#cuando {
+    padding: 1.5rem 0;
+    font-size: 0.7rem;
+}
+
+#descripcion {
+    margin-left: 2rem;
+    transition: 2s;
+}
+
+.agrandar-descripcion {
+    position: absolute;
+    transform: scale(3);
+}
