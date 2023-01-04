@@ -194,6 +194,7 @@ html, body {
 #dato-uno {
     padding: 5.1rem 0 0 0.1rem;
     position: relative;
+
 }
 
 #dato-dos, #dato-cuatro, #dato-seis, #dato-ocho {
@@ -213,11 +214,13 @@ html, body {
 #cuando {
     padding: 1.5rem 0;
     font-size: 0.7rem;
+    margin-left: -10.5rem;
 }
 
 #descripcion {
-    margin-left: 2rem;
     transition: 2s;
+    position: absolute;
+    left: 10rem;
 }
 
 .agrandar-descripcion {
