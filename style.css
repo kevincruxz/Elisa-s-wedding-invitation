@@ -273,12 +273,11 @@ html, body {
     border: black dotted 3px;
     padding: 5px;
     border-radius: 15px;
-    transition: 1s;
 }
 
 .agrandar-descripcion {
     position: absolute;
     width: 10rem;
     height: 10rem;
-    transition: 1s;
+    border: black 2px solid;
 }
