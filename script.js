@@ -37,15 +37,46 @@ let holaAnimation = setInterval(function() {
     i = (i === 3) ? 0 : i + 1;
 }, 300);
 
-let bot1 = document.getElementById('cuando');
+let botones = document.querySelectorAll('.botones');
+let detailsOpen = false;
 
-bot1.addEventListener('click', (e) => {
-    let descripcion = document.getElementById('descripcion');
-    descripcion.classList.add('agrandar-descripcion');
-
-    descripcion.innerHTML = "asdad asd asdsad adasd asdasdasdad asdasdasd";
-    bot1.style.cssText = 'margin-left: -10.5rem;';
+botones.forEach(function(boton) {
+    boton.addEventListener('click', (e) => {
+        let descripcion = document.querySelector(getTheDiv(boton.id));
+        if (detailsOpen) {
+            descripcion.classList.remove('agrandar-descripcion');
+            descripcion.classList.remove('animate__animated');
+            descripcion.classList.remove('animate__flip');
+            detailsOpen = false;
+        } else {
+            descripcion.classList.add('animate__animated');
+            descripcion.classList.add('animate__flip');
+            descripcion.classList.add('agrandar-descripcion');
+            descripcion.innerHTML = "asdad asd asdsad adasd asdasdasdad asdasdasd";
+            detailsOpen = true;
+        }   
+    });
 });
+
+function getTheDiv(id) {
+    if (id === 'cuando') {
+        return "#descripcion";
+    } else if (id === 'cuando-dos') {
+        return "#descripcion-dos";
+    } else if (id === 'cuando-tres') {
+        return "#descripcion-tres";
+    } else if (id === 'cuando-cuatro') {
+        return "#descripcion-cuatro";
+    } else if (id === 'cuando-cinco') {
+        return "#descripcion-cinco";
+    } else if (id === 'cuando-seis') {
+        return "#descripcion-seis";
+    } else if (id === 'cuando-siete') {
+        return "#descripcion-siete";
+    } else if (id === 'cuando-ocho') {
+        return "#descripcion-ocho";
+    }
+}
 
 /*
     // detect when element gets visible on scroll

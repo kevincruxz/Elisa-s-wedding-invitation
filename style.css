@@ -192,7 +192,7 @@ html, body {
 }
 
 #dato-uno {
-    padding: 5.1rem 0 0 0.1rem;
+    padding: 3.7rem 0 0 0.1rem;
     position: relative;
 }
 
@@ -206,66 +206,79 @@ html, body {
 } 
 
 #dato-dos {
-    padding-top: 12.8rem;
+    padding-top: 9.66rem;
 }
 
 #dato-tres {
-    padding-top: 12.1rem;
+    padding-top: 9rem;
 }
 
 #dato-cuatro {
-    padding-top: 13.3rem;
+    padding-top: 10rem;
 }
 
 #dato-cinco {
-    padding-top: 11.7rem;
+    padding-top: 8.5rem;
 }
 
 #dato-seis {
-    padding-top: 12.5rem;
+    padding-top: 9.7rem;
 }
 
 #dato-siete {
-    padding-top: 12.2rem;
+    padding-top: 9rem;
 }
 
 #dato-ocho {
-    padding-top: 13.1rem;
+    padding-top: 10rem;
 }
 
 #cuando, #cuando-tres, #cuando-cinco, #cuando-siete {
     padding: 1.7rem 0.5rem;
     font-size: 0.7rem;
     margin-left: -10.5rem;
+    display: inline-block;
 }
 
-#descripcion, #descripcion-tres, #descripcion-cinco, #descripcion-siete {
+#descripcion-tres, #descripcion-cinco, #descripcion-siete {
     position: absolute;
     left: 12rem;
+    top: 9.8rem;
 }
 
 #cuando-dos, #cuando-cuatro, #cuando-seis, #cuando-ocho {
     padding: 1.7rem 0.5rem;
     font-size: 0.8rem;
     margin-right: -18rem;
+    display: inline-block;
 }
 
 #descripcion-dos, #descripcion-cuatro, #descripcion-seis, #descripcion-ocho {
     position: absolute;
     right: 12rem;
+    top: 10.5rem;
+}
+
+#descripcion {
+    position: absolute;
+    left: 12rem;
+    top: 4.8rem;
+}
+
+#descripcion-ocho {
+    top: 11rem;
 }
 
 .descripciones {
     border: black dotted 3px;
     padding: 5px;
     border-radius: 15px;
-    
+    transition: 1s;
 }
 
 .agrandar-descripcion {
     position: absolute;
-    transform: translate(-100px, -50px);
-    
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
     transition: 1s;
 }
