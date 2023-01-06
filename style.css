@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 * {
     margin: 0;
@@ -280,4 +281,27 @@ html, body {
     width: 10rem;
     height: 10rem;
     border: black 2px solid;
+}
+
+.ubication {
+    font-family: 'Caveat', cursive;
+    background-color: #285430;
+    font-size: 1.7rem;
+    color: #F49D1A;
+}
+
+.ubication h1 {
+    padding-top: 3rem;
+}
+
+.ubi-description {
+    padding: 2rem 1rem;
+}
+
+iframe {
+    width: 80%;
+    height: 50vh;
+    
+    margin-bottom: 3rem;
+    border: solid 5px black;
 }
