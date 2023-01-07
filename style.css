@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Yeon+Sung&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Yeon+Sung&family=Caveat&family=Kalam&display=swap');
 
 * {
     margin: 0;
@@ -304,4 +303,39 @@ iframe {
     
     margin-bottom: 3rem;
     border: solid 5px black;
+}
+
+.reservation-zone {
+    background-color: #EF9A53;
+    font-family: 'Kalam', cursive;
+}
+
+.baile-normal {
+    background: url(img/baileNormal.gif);
+    color: black;
+}
+
+.baile-arruinado {
+    background: url(img/baileArruinado.gif);
+    color: wheat;
+}
+
+.baile-normal, .baile-arruinado {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    margin: 1.5rem auto;
+    border-radius: 10px;
+    border: black solid 2px;
+    font-size: 1.1rem;
+}
+
+.reservation-zone h1 {
+    padding: 1.5rem 0;
+    font-size: 3rem;
 }
