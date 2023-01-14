@@ -311,7 +311,7 @@ iframe {
 }
 
 .baile-normal {
-    background: url(img/baileNormal.gif);
+    background: url(img/baileChido.gif);
     color: black;
 }
 
@@ -338,4 +338,14 @@ iframe {
 .reservation-zone h1 {
     padding: 1.5rem 0;
     font-size: 3rem;
+}
+
+.reserv-inst {
+    width: 20rem;
+    margin: 0 auto;
+}
+
+.reserv-inst span {
+    color: #820000;
+
 }
