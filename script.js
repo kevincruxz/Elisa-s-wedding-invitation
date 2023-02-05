@@ -53,10 +53,11 @@ botones.forEach(function(boton) {
             descripcion.innerHTML = allData[2];
             descripcion.classList.add('animate__animated');
             descripcion.classList.add('animate__bounceInDown');
+            descripcion.classList.add('descripciones');
         } else {
-
             descripcion.classList.remove('animate__animated');
             descripcion.classList.remove('animate__bounceInDown');
+            descripcion.classList.remove('descripciones');
 
             descripcion.style.cssText = `background: url(img/${allData[3]}); background-size: cover; background-position: center; background-repeat: no-repeat;`;
             
@@ -73,12 +74,12 @@ function getEverything(id) {
 
     if (id === 'cuando') {
         arr[0] = "#descripcion";
-        arr[1] = "Cuando llegues al parque Chipinque menciona que asistiras a la boda de Elisa y Pedro. Conduce hasta llegar al hotel";
+        arr[1] = "<span>Cuando llegues al parque Chipinque menciona que asistiras a la boda de Elisa y Pedro. Conduce hasta llegar al hotel</span>";
         arr[2] = "Llegada a chipinque";
         arr[3] = "chipinque.jpg";
     } else if (id === 'cuando-dos') {
         arr[0] = "#descripcion-dos";
-        arr[1] = "Realiza tu check in en el hotel";
+        arr[1] = "<span>Realiza tu check in en el hotel</span>";
         arr[2] = "Recepcion en hotel chipinque";
         arr[3] = "hotel.jpg";
     } else if (id === 'cuando-tres') {
@@ -88,7 +89,7 @@ function getEverything(id) {
         arr[3] = "misa.png";
     } else if (id === 'cuando-cuatro') {
         arr[0] = "#descripcion-cuatro";
-        arr[1] = "Se realizará justo despues de la ceremonia religiosa en un mirador con vistas a toda la ciudad de Monterrey";
+        arr[1] = "<span>Se realizará justo despues de la ceremonia religiosa en un mirador con vistas a toda la ciudad de Monterrey</span>";
         arr[2] = "Brindis";
         arr[3] = "brindis.jpg";
     } else if (id === 'cuando-cinco') {
@@ -115,6 +116,21 @@ function getEverything(id) {
     return arr;
 }
 
+let buttonsAnimation = setInterval(function() {
+    if (botones[0].classList.contains('animate__animated')) {
+        botones.forEach(function(boton) {
+            boton.classList.remove('animate__animated');
+            boton.classList.remove('animate__tada')
+        });
+    } else {
+        botones.forEach(function(boton) {
+            boton.classList.add('animate__animated');
+            boton.classList.add('animate__tada')
+        });
+    }
+    
+}, 1000);
+
 const gift = document.querySelector('.boton-regalos');
 
 let giftAnimation = setInterval(function() {
@@ -125,4 +141,4 @@ let giftAnimation = setInterval(function() {
         gift.classList.add('animate__animated');
         gift.classList.add('animate__rubberBand');
     }
-}, 1000)
+}, 1000);

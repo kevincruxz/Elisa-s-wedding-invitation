@@ -185,14 +185,16 @@ html, body {
     height: 125rem;
     background-position: center;
     background-repeat: no-repeat;
+    font-family: 'Caveat', cursive;
 }
 
 .schedule h3 {
     padding-top: 8rem;
+    position: relative;
 }
 
 #dato-uno {
-    padding: 3.7rem 0 0 0.1rem;
+    padding: 3.4rem 0 0 0.1rem;
     position: relative;
 }
 
@@ -206,36 +208,36 @@ html, body {
 } 
 
 #dato-dos {
-    padding-top: 9.66rem;
+    padding-top: 9.1rem;
 }
 
 #dato-tres {
-    padding-top: 9rem;
+    padding-top: 8.7rem;
 }
 
 #dato-cuatro {
-    padding-top: 10rem;
+    padding-top: 9.5rem;
 }
 
 #dato-cinco {
-    padding-top: 8.5rem;
+    padding-top: 8.3rem;
 }
 
 #dato-seis {
-    padding-top: 9.7rem;
+    padding-top: 9.2rem;
 }
 
 #dato-siete {
-    padding-top: 9rem;
+    padding-top: 8.6rem;
 }
 
 #dato-ocho {
-    padding-top: 10rem;
+    padding-top: 9.5rem;
 }
 
 #cuando, #cuando-tres, #cuando-cinco, #cuando-siete {
     padding: 1.7rem 0.5rem;
-    font-size: 0.7rem;
+    
     margin-left: -10.5rem;
     display: inline-block;
 }
@@ -248,7 +250,7 @@ html, body {
 
 #cuando-dos, #cuando-cuatro, #cuando-seis, #cuando-ocho {
     padding: 1.7rem 0.5rem;
-    font-size: 0.8rem;
+    
     margin-right: -18rem;
     display: inline-block;
 }
@@ -265,21 +267,46 @@ html, body {
     top: 4.8rem;
 }
 
+#descripcion-dos {
+    font-size: 1rem;
+    padding: 14px 7px;
+}
+
 #descripcion-ocho {
     top: 11rem;
 }
 
+.botones {
+    cursor: pointer;
+}
+
 .descripciones {
-    border: black dotted 3px;
-    padding: 5px;
-    border-radius: 15px;
+    box-shadow: 0px 11px 14px -6px #276873;
+	border: #000000 solid 3px;
+	background-color:#ffffff;
+	border-radius:8px;
+	display:inline-block;
+	color:#000000;
+	font-weight:bold;
+	padding: 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+    font-size: 1.3rem;
 }
 
 .agrandar-descripcion {
+    box-shadow: 0px 11px 14px -6px #276873;
+	border: #000000 solid 3px;
+    border-radius:8px;
+	display: flex;
+    align-items: center;
     position: absolute;
     width: 10rem;
     height: 10rem;
     border: black 2px solid;
+    color: gold;
+    font-size: 1.3rem;
+    font-weight: lighter;
 }
 
 .ubication {
@@ -380,8 +407,4 @@ footer {
     background-color: black;
     color: white;
     font-family: 'Caveat', cursive;
-}
-
-.animate__animated.animate__flip {
-    animation-duration: 0.5s;
 }
