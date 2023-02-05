@@ -1,4 +1,4 @@
-const date = new Date("Apr 8, 2023 17:00:00").getTime();
+const date = new Date("Jul 22, 2023 17:00:00").getTime();
 
 let setCountdown = setInterval(function() {
     let currentDate = new Date().getTime();
@@ -114,3 +114,15 @@ function getEverything(id) {
     }
     return arr;
 }
+
+const gift = document.querySelector('.boton-regalos');
+
+let giftAnimation = setInterval(function() {
+    if (gift.classList.contains('animate__animated')) {
+        gift.classList.remove('animate__animated');
+        gift.classList.remove('animate__rubberBand');
+    } else {
+        gift.classList.add('animate__animated');
+        gift.classList.add('animate__rubberBand');
+    }
+}, 1000)

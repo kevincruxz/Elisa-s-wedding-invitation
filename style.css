@@ -340,7 +340,7 @@ iframe {
     font-size: 3rem;
 }
 
-.reserv-inst {
+.reserv-inst, .gifts h3 {
     width: 20rem;
     margin: 0 auto;
 }
@@ -351,4 +351,37 @@ iframe {
 
 .tel {
     font-size: 1.5rem;
+}
+
+.gifts {
+    background-color: #C3ACD0;
+    font-family: 'Kalam', cursive;
+}
+
+.gifts h1 {
+    padding-top: 1.5rem;
+    font-size: 3rem;
+}
+
+.boton-regalos {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    
+}
+
+.boton-regalos img {
+    width: 7rem;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: 'Caveat', cursive;
+}
+
+.animate__animated.animate__flip {
+    animation-duration: 0.5s;
 }
