@@ -129,8 +129,9 @@ html, body {
 }
 
 .foto2-seccion2 {
-    right: 1rem;
+    left: 1rem;
     top: 20rem;
+    width: 11.5rem;
 }
 
 .foto3-seccion2 {
@@ -141,11 +142,13 @@ html, body {
 .foto4-seccion2 {
     right: 1rem;
     top: 50rem;
+    width: 12rem;
 }
 
 .foto5-seccion2 {
     left: 2rem;
     top: 70rem;
+    width: 17rem;
 }
 
 .section-two {
