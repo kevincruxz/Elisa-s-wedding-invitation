@@ -271,8 +271,7 @@ html, body {
 }
 
 #descripcion-dos {
-    font-size: 1rem;
-    padding: 14px 7px;
+    margin-left: 7px;
 }
 
 #descripcion-ocho {
@@ -307,7 +306,7 @@ html, body {
     width: 10rem;
     height: 10rem;
     border: black 2px solid;
-    color: gold;
+    color: white;
     font-size: 1.3rem;
     font-weight: lighter;
 }

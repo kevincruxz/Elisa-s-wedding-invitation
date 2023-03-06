@@ -64,6 +64,9 @@ botones.forEach(function(boton) {
             descripcion.classList.add('animate__animated');
             descripcion.classList.add('animate__jackInTheBox');
             descripcion.classList.add('agrandar-descripcion');
+            if (allData[0] === "#descripcion" || allData[0] === "#descripcion-tres" || allData[0] === "#descripcion-cinco" || allData[0] === "#descripcion-siete") {
+                descripcion.style.color = 'white'
+            }
             descripcion.innerHTML = allData[1];
         }   
     });
@@ -76,12 +79,12 @@ function getEverything(id) {
         arr[0] = "#descripcion";
         arr[1] = "<span>Cuando llegues al parque Chipinque menciona que asistiras a la boda de Elisa y Pedro. Conduce hasta llegar al hotel</span>";
         arr[2] = "Llegada a chipinque";
-        arr[3] = "chipinque.jpg";
+        arr[3] = "ererer.png";
     } else if (id === 'cuando-dos') {
         arr[0] = "#descripcion-dos";
         arr[1] = "<span>Realiza tu check in en el hotel</span>";
         arr[2] = "Recepcion en hotel chipinque";
-        arr[3] = "hotel.jpg";
+        arr[3] = "hotel.png";
     } else if (id === 'cuando-tres') {
         arr[0] = "#descripcion-tres";
         arr[1] = "Se celebrará en una capilla al aire libre dentro del hotel Chipinque";
@@ -91,27 +94,27 @@ function getEverything(id) {
         arr[0] = "#descripcion-cuatro";
         arr[1] = "<span>Se realizará justo despues de la ceremonia religiosa en un mirador con vistas a toda la ciudad de Monterrey</span>";
         arr[2] = "Brindis";
-        arr[3] = "brindis.jpg";
+        arr[3] = "brindis.png";
     } else if (id === 'cuando-cinco') {
         arr[0] = "#descripcion-cinco";
         arr[1] = "Podrás consumir los dulces que se encontrarán en mesas alrededor del mirador";
         arr[2] = "Mesa de dulces";
-        arr[3] = "mesadedulces.jpeg";
+        arr[3] = "mesadedulces.png";
     } else if (id === 'cuando-seis') {
         arr[0] = "#descripcion-seis";
         arr[1] = "En la explanada del hotel se localizara un fotografo profesional para tomar fotos con o sin los novios";
         arr[2] = "Fotografias";
-        arr[3] = "fotos.jpeg";
+        arr[3] = "fotos.png";
     } else if (id === 'cuando-siete') {
         arr[0] = "#descripcion-siete";
         arr[1] = "Tendra lugar a partir de las 19:00 en una explanada al costado del mirador de Chipinque.";
         arr[2] = "Fiesta";
-        arr[3] = "fiesta.jpg";
+        arr[3] = "fiesta.png";
     } else {
         arr[0] = "#descripcion-ocho";
         arr[1] = "Se servira un menu de tres tiempos conformado por platillos muy ricos.";
         arr[2] = "Servicio de cena";
-        arr[3] = "cena.jpg";
+        arr[3] = "cena.png";
     }
     return arr;
 }
