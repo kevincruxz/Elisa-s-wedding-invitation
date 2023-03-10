@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Yeon+Sung&family=Caveat&family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Yeon+Sung&family=Caveat&family=Kalam&family=Satisfy&display=swap');
 
 * {
     margin: 0;
@@ -15,10 +15,12 @@ html, body {
 
 .countdown {
     display: flex;
-    gap: 5px;
+    gap: 12px;
     justify-content: center;
+    margin-top: 30px;
     height: 2rem;
-    font-weight: bold;
+    font-weight: lighter;
+    font-family: 'Satisfy', cursive;
 }
 
 .portada {
@@ -30,9 +32,10 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 50px;
     font-family: 'Sevillana', cursive;
     font-size: 2rem;
-    color: wheat;
+    color: black;
 }
 
 #letraE, #letraL, #letraI, #letraS, #letraA, #letraAND, #letraP, #letrae, #letraD, #letraR, #letraO {
@@ -129,7 +132,7 @@ html, body {
 }
 
 .foto2-seccion2 {
-    left: 1rem;
+    right: 1rem;
     top: 20rem;
     width: 11.5rem;
 }
@@ -146,9 +149,15 @@ html, body {
 }
 
 .foto5-seccion2 {
-    left: 2rem;
-    top: 70rem;
-    width: 17rem;
+    left: 1rem;
+    top: 69rem;
+    width: 15rem;
+}
+
+.foto6-seccion2 {
+    right: 0.6rem;
+    top: 80rem;
+    width: 23rem;
 }
 
 .section-two {

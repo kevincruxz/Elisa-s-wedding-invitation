@@ -12,10 +12,10 @@ let setCountdown = setInterval(function() {
 }, 1000);
 
 function displayCountdown(days, hours, minutes, seconds) {
-    document.getElementById('days').innerHTML = days + " Dias ";
-    document.getElementById('hours').innerHTML = hours + " Horas ";
-    document.getElementById('minutes').innerHTML = minutes + " Minutos ";
-    document.getElementById('seconds').innerHTML = seconds + " Segundos";
+    document.getElementById('days').innerHTML = days + ((days === 1) ? " Dia  " : " Dias ");
+    document.getElementById('hours').innerHTML = hours + ((hours === 1) ? " Hora " : " Horas ");
+    document.getElementById('minutes').innerHTML = minutes + ((minutes === 1) ? " Minuto " : " Minutos ");
+    document.getElementById('seconds').innerHTML = seconds + " Segundos ";
 }
 
 const holaArray = [
