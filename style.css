@@ -98,7 +98,7 @@ html, body {
 .parrafos {
     width: 17rem;
     height: 7%;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
     z-index: 3;
     position: relative;
     margin: 0 auto;
@@ -150,13 +150,13 @@ html, body {
 
 .foto5-seccion2 {
     left: 1rem;
-    top: 69rem;
+    top: 70rem;
     width: 15rem;
 }
 
 .foto6-seccion2 {
-    right: 0.6rem;
-    top: 80rem;
+    right: 1rem;
+    top: 82rem;
     width: 23rem;
 }
 
