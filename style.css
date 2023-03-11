@@ -325,20 +325,45 @@ html, body {
     background-color: #285430;
     font-size: 1.7rem;
     color: #F49D1A;
+    position: relative;
 }
 
 .ubication h1 {
     padding-top: 3rem;
+    z-index: 2;
+    position: relative;
 }
 
 .ubi-description {
     padding: 2rem 1rem;
+    z-index: 3;
+    position: relative;
+}
+
+.ubi-images {
+    position: absolute;
+    z-index: 1;
+    opacity: 70%;
+}
+
+.ubi-img-1 {
+    top: 7rem;
+    left: 6rem;
+    width: 300px;
+}
+
+.ubi-img-2 {
+    top: 33rem;
+    left: 1rem;
+    width: 370px;
+    opacity: 100%;
 }
 
 iframe {
     width: 80%;
     height: 50vh;
-    
+    position: relative;
+    z-index: 4;
     margin-bottom: 3rem;
     border: solid 5px black;
 }
