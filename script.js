@@ -18,6 +18,38 @@ function displayCountdown(days, hours, minutes, seconds) {
     document.getElementById('seconds').innerHTML = seconds + " Segundos ";
 }
 
+const arrows = document.querySelectorAll('.flechas');
+
+const scrollAnimation = setTimeout(() => {
+    arrows.forEach((arrow) => {
+        arrow.style.cssText = "opacity: 1;"
+        arrow.classList.add('animate__animated');
+        arrow.classList.add('animate__fadeIn');
+    });
+
+    setTimeout(() => {
+        arrows.forEach((arrow) => {
+            arrow.classList.remove('animate__animated');
+            arrow.classList.remove('animate__fadeIn');
+        });
+
+        setInterval(function() {
+            if (arrows[0].classList.contains('animate__animated')) {
+                arrows.forEach(function(arrow) {
+                    arrow.classList.remove('animate__animated');
+                    arrow.classList.remove('animate__shakeY');
+                });
+            } else {
+                arrows.forEach(function(arrow) {
+                    arrow.classList.add('animate__animated');
+                    arrow.classList.add('animate__shakeY');
+                });
+            }
+        }, 2000);
+    }, 300);
+    
+}, 8000); 
+
 const holaArray = [
     document.getElementById('H'),
     document.getElementById('o'),

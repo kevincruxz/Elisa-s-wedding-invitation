@@ -36,6 +36,27 @@ html, body {
     font-family: 'Sevillana', cursive;
     font-size: 2rem;
     color: black;
+    position: relative;
+}
+
+.flechas {
+    position: absolute;
+    width: 4rem;
+    opacity: 0;
+}
+
+.flecha-izq {
+    bottom: 1rem;
+    left: 2rem;
+}
+
+.flecha-der {
+    bottom: 1rem;
+    right: 2rem;
+}
+
+.animate__animated.animate__fadeIn {
+    animation-duration: 0.6s;
 }
 
 #letraE, #letraL, #letraI, #letraS, #letraA, #letraAND, #letraP, #letrae, #letraD, #letraR, #letraO {
@@ -162,7 +183,7 @@ html, body {
 
 .section-two {
     text-align: center;
-    padding: 3rem 0;
+    padding: 3rem 0 10rem 0;
     background-color: #222222;
     color: white;
     font-family: 'Yeon Sung', cursive;
