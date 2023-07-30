@@ -1,4 +1,4 @@
-const date = new Date("Jul 22, 2023 17:00:00").getTime();
+const date = new Date("Aug 06, 2023 17:00:00").getTime();
 
 let setCountdown = setInterval(function() {
     let currentDate = new Date().getTime();
